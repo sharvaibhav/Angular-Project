@@ -1,0 +1,43 @@
+<div class="row">
+  <div class="col-xs-12">
+    <form>
+      <div class="row">
+        <div class="col-sm-5 form-gropup">
+          <label for="name">Name</label>
+          <input type="text" id="name" class="form-control" #nameInput />
+        </div>
+        <div class="col-sm-2">
+          <label for="amount">Amount</label>
+          <input
+            type="number"
+            class="form-control"
+            id="amount"
+            #nameAmountInput
+          />
+        </div>
+      </div>
+      <hr />
+      <div class="row">
+        <div class="col-xs-12">
+          <button type="submit" class="btn btn-success" (click)="onAdd($event)">
+            Add
+          </button>
+          <button
+            type="submit"
+            class="btn btn-danger"
+            (click)="onDelete($event)"
+          >
+            Delete
+          </button>
+          <button
+            type="submit"
+            class="btn btn-primary"
+            (click)="onClear($event)"
+          >
+            Clear
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
